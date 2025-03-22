@@ -2,7 +2,7 @@ import com.github.benmanes.gradle.versions.updates.*
 import com.vanniktech.maven.publish.SonatypeHost.Companion.CENTRAL_PORTAL
 
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin)
     alias(libs.plugins.version.catalog.update)
     alias(libs.plugins.ben.manes.versions)
     alias(libs.plugins.ktlint)
@@ -11,7 +11,7 @@ plugins {
     signing
 }
 
-description = "Library template."
+description = "Additional functionality of Ktor Server."
 group = "io.github.kodepix"
 version = "1.0-SNAPSHOT"
 
@@ -22,7 +22,6 @@ repositories {
 dependencies {
     api(libs.kotlinx.coroutines.core)
     api(libs.kotlinx.coroutines.slf4j)
-    api(libs.kotlin.logging.jvm)
     api(libs.kodepix.commons)
 
     testImplementation(libs.bundles.testing)
@@ -40,7 +39,7 @@ mavenPublishing {
     signAllPublications()
 
     pom {
-        name = "Commons Library"
+        name = "Ktor Server Extras"
         description = project.description
         inceptionYear = "2025"
         url = "https://github.com/kodepix/${project.name}/"
