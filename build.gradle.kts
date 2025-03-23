@@ -23,6 +23,14 @@ repositories {
 dependencies {
     api(libs.kotlinx.coroutines.core)
     api(libs.kotlinx.coroutines.slf4j)
+    api(libs.ktor.server.core)
+    api(libs.ktor.server.content.negotiation)
+    api(libs.ktor.serialization.jackson)
+    api(libs.ktor.openapi)
+    api(libs.jackson.module.kotlin)
+    api(libs.jackson.dataformat.xml)
+    api(libs.jackson.datatype.jsr310)
+    api(libs.konform)
     api(libs.i18n4k.core)
     api(libs.kodepix.commons)
 
