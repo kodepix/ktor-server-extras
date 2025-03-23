@@ -4,6 +4,7 @@ kotlin = "2.1.20"
 kotlinx-coroutines = "1.10.1"
 
 [libraries]
+i18n4k-core = "de.comahe.i18n4k:i18n4k-core-jvm:0.10.0"
 kodepix-commons = "io.github.kodepix:commons:2.0"
 kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
 kotest-assertions-konform-jvm = "io.kotest.extensions:kotest-assertions-konform-jvm:1.3.0"
@@ -25,6 +26,7 @@ testing = [
 [plugins]
 ben-manes-versions = "com.github.ben-manes.versions:0.52.0"
 dokka = "org.jetbrains.dokka:2.0.0"
+i18n4k = "de.comahe.i18n4k:0.10.0"
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ktlint = "org.jlleitschuh.gradle.ktlint:12.2.0"
 vanniktech-maven-publish = "com.vanniktech.maven.publish:0.31.0"
