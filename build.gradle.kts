@@ -14,7 +14,7 @@ plugins {
 
 description = "Additional functionality of Ktor Server."
 group = "io.github.kodepix"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
